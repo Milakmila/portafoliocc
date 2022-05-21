@@ -15,7 +15,7 @@ root.render(
   <BrowserRouter>
     <Routes> 
 
-      <Route path='/Portfolio-React/' element={<Home />}></Route>
+      <Route path='/portafoliocc/' element={<Home />}></Route>
       <Route path='/aboutme' element={<Aboutme />}></Route>
       <Route path='/skills' element={<Skills />}></Route>
       <Route path='/studies' element={<Studies />}></Route>
