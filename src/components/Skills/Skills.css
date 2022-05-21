@@ -1,0 +1,37 @@
+
+/*----------Main skills----------*/
+
+.skills{
+    margin: 30px 0;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    
+}
+.rectangle{
+    width: 90px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: rgb(178,90,236);
+    background: linear-gradient(180deg, rgba(178,90,236,1) -4%, #8232d1 0%, rgba(155,71,223,1) 17%, rgba(178,90,236,1) 41%, rgba(144,119,237,1) 56%, rgba(126,135,238,1) 69%, rgba(89,167,240,1) 85%, rgba(68,185,241,1) 94%);
+    padding: 10%;
+    border-radius: 50%;
+   margin: 25% ;
+   
+}
+.second{
+    display: none;
+}
+
+@media screen and (min-width:728px) {
+    .second{
+        display: block;
+    }
+}

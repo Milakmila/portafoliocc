@@ -1,0 +1,38 @@
+/*----------tools----------*/
+.tools{
+    margin: 30px 0;
+}
+.tools-img{
+    width: 200px;
+
+}
+@media screen and (min-width:728px) {
+    .tools-img{
+        width: 350px;
+    
+    }
+   
+}
+@media screen and (min-width:1024px) {
+/*----------tools----------*/
+.tools{
+    display: flex;
+}
+.text-tool{
+    margin: 120px 50px;
+}
+.tools-img{
+    margin: 0 20px;
+}
+.text-about h2{
+    padding: 0% 0;
+}
+.text-about p{
+    padding: 5% 4%;
+}
+}
+@media screen and (min-width:1440px) {
+.tools-img{
+    margin: 0 120px;
+}
+}
