@@ -1,0 +1,141 @@
+
+/*----------Principal----------*/
+.principal{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "profession"
+    "left-one"
+    "button-one"
+    "social";  
+    gap: 7px;
+}
+.social a{
+    grid-area: social;
+    color: var(--blue-baby);
+    margin: 10px;
+}
+
+.title-one{
+    grid-area: name;
+}
+.title-two{
+    grid-area: profession;
+}
+.btn-one{
+    grid-area:button-one;
+}
+.btn:hover{
+    background-color: #081870;
+}
+.btn-outline:hover{
+    background-color: #8232D1;
+}
+.left{
+    grid-area: left-one ;
+   
+}
+.btn-right{
+    position: relative;
+    bottom: 20px;
+    margin: 0 15px 0 200px;
+}
+
+.btn-left{
+    position: relative;
+    top: 20px;
+    margin: 0 200px 0 10px;
+}
+.foto{
+    width: 300px;
+}
+/*--------Botones----------*/
+.btn-outline{
+    background-color: #081870;
+    padding:  1% 3%;
+    margin: 0 20px;
+  }
+  .btn-color{
+    border: none;
+    border: 2px solid rgb(178,90,236);
+    background: linear-gradient(180deg, rgba(178,90,236,1) -4%, #8232d1 0%, rgba(155,71,223,1) 17%, rgba(178,90,236,1) 41%, rgba(144,119,237,1) 56%, rgba(126,135,238,1) 69%, rgba(89,167,240,1) 85%, rgba(68,185,241,1) 94%);
+    padding: 2% 5%;
+  
+  }
+@media screen and (min-width:728px) {
+    /*Principal*/
+    .principal{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: 
+        "name left-one social"
+        "profession left-one social"
+        "button-one left-one social"
+        "button-one left-one social"
+        ; 
+        gap: 0px; 
+    }
+    .title-one{
+        align-self:flex-end;
+        padding: 20px;
+    }
+    .btn-one{
+        display:flex;
+        align-self:baseline;
+    }
+    .btn{
+        padding: 0 20%;
+        
+    }
+    .btn-outline{
+        justify-content: center;
+        padding: 15%;
+    }
+    .social{
+        transform: rotate(-90deg);
+        grid-row: 2/4;
+
+    }
+    .btn-right{
+        padding: 12px 20px;
+    }
+    .btn-left{
+        padding: 12px 20px;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .foto{
+        display: flex;
+        align-items: center;
+    }
+   .btn-right{
+       float: right;
+     
+   }
+   
+
+
+}
+
+@media screen and (min-width:1440px) {
+    .principal{
+        grid-template-columns: 40% 50% 10%;
+    }
+    
+    .btn-right{
+        float: right;
+        right: 90px;
+        margin: 0 15px 0 300px;
+    }
+    
+    .btn-left{
+        bottom: 10px;
+        right: 40px;
+        margin: 0 200px 0 10px;
+    }
+}
