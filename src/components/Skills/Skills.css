@@ -24,11 +24,27 @@
     padding: 10%;
     border-radius: 50%;
    margin: 25% ;
+   transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
    
+}
+.circle:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 4px 15px 0 rgba(144,119,237,1);
+}
+.circle::focus {
+    outline: none;
 }
 .second{
     display: none;
 }
+
 
 @media screen and (min-width:728px) {
     .second{

@@ -30,7 +30,7 @@ function Aboutme() {
 
               <div class="left">
 
-                  <button class="btn-color btn-left button button--bubble"><h4>Tools</h4></button>
+                  <button class="btn-color btn-left button "><h4>Tools</h4></button>
 
                   <img src={Camila} alt="camilafoto" class="foto"></img>
                   <div className="parentDiv">

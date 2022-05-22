@@ -48,7 +48,22 @@
 }
 .foto{
     width: 300px;
+    animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes tilt-in-top-1 {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  
 /*--------Botones----------*/
 .btn-outline{
     background-color: #081870;
@@ -60,8 +75,40 @@
     border: 2px solid rgb(178,90,236);
     background: linear-gradient(180deg, rgba(178,90,236,1) -4%, #8232d1 0%, rgba(155,71,223,1) 17%, rgba(178,90,236,1) 41%, rgba(144,119,237,1) 56%, rgba(126,135,238,1) 69%, rgba(89,167,240,1) 85%, rgba(68,185,241,1) 94%);
     padding: 2% 5%;
+    animation: jello-horizontal 0.9s both;
   
   }
+  .btn-color:hover{
+    animation: animate 8s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  } 
+  .btn-color::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(178,90,236,1) -4%, #8232d1 0%,69%, rgba(89,167,240,1) 85%, rgba(68,185,241,1) );
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5%;
+  }
+  .btn-color:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+  
 @media screen and (min-width:728px) {
     /*Principal*/
     .principal{
