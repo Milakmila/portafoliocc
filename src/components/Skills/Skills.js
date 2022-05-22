@@ -2,7 +2,9 @@ import './Skills.css'
 import '../../index.css';
 
 function Skill(){
+    <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
     return(
+        
         <section class="skills">
               <h1>Main Skills</h1>
                 <div class="icons">

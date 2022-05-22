@@ -4,6 +4,7 @@ import '../../index.css'
 import Camila from './fotoCamila.png'
 
 function Aboutme() {
+  <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
     return(
         <section class="principal">
             <div class="social">
