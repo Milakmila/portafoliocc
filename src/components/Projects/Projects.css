@@ -2,19 +2,18 @@
 /*----------projects----------*/
 .projects{
     display: grid;
-
-
 }
 
 .image img{
-    width: 70%;
-    margin-right:  30% ;
+    width: 350px;
+
     
 
 }
 .row{
     display: flex;
     flex-wrap: wrap;
+    overflow-x:hidden ;
 }
 .column{
     flex: 10%;
@@ -23,14 +22,15 @@
 .column img{
     margin-top: 5px;
 }
+
 @media screen and (min-width:728px) {
 .column{
-    flex: 50%;
+ 
     padding: 5px;
 }
 .image img{
     width: 100%;
-    margin-right:  30% ;
+
     
 
 }
@@ -38,8 +38,11 @@
 @media screen and (min-width:1024px) {
 .row{
     flex-wrap: nowrap;
-    position: relative;
-    left: 15%;
+
+}
+.image img{
+    width: 600px;
+    justify-content: center;
 }
 .column{
     flex: 100%;
