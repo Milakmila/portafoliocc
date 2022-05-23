@@ -6,7 +6,9 @@ function Header(){
     return(
         <header>
         <div className="logo">
+            <Link to="/portafoliocc/">
             <img src={Logo} alt="LogoKmilaC"></img>
+            </Link>
         </div>
         <nav>
         <div className="items">
