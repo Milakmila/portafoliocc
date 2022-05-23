@@ -1,8 +1,11 @@
-a{
+.ir{
     text-decoration: none;
-    color: #CA6FFA;
+    color: white;
+    background-color: #8232D1;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    padding: 0 20px;
+    border-radius: 20px;
 }
 .cards > div{
     position: relative;
@@ -13,7 +16,7 @@ a{
     z-index: 1;
     overflow: hidden;
     display: grid;
-    margin: 50px;
+    margin: 80px;
    
 }
 .card{
@@ -50,7 +53,6 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -70,7 +72,6 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -98,7 +99,6 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -126,7 +126,7 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
+ 
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -154,7 +154,6 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -183,7 +182,6 @@ a{
     left: 0;
     width: 100%;
     height: calc(60%+35px);
-    background-color: #fff;
     transition: transform .5s .25s ease-in;
     z-index: -1;
 
@@ -207,7 +205,7 @@ a{
 /*content*/
 .card-content{
     text-align: center;
-    margin: 32% 0;
+    margin: 18% 0;
     opacity: 0;
     transition: opacity .25s;
 }
@@ -215,10 +213,11 @@ a{
     color: transparent;
     -webkit-text-stroke: 2.2px black;
     font-size: 2em;
-    margin: 20px;
+    margin: 10px;
 }
 .card-description{
     background-color: #081870;
+    margin-bottom: 20px;
 }
 
 .card:hover::before, .card:hover::after{
